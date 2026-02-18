@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi - OpenFlexure ITB</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/images/itb.svg" alt="ITB Logo" class="logo-img">
+                <span class="logo-text">OpenFlexure ITB</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../downloads.html" class="nav-link">Unduh</a></li>
+                <li><a href="../docs.html" class="nav-link active">Dokumentasi</a></li>
+                <li><a href="../about.html" class="nav-link">Tentang Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Docs Layout -->
+    <div class="docs-layout">
+        <!-- Sidebar -->
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <div class="docs-nav-section">
+                    <button class="docs-nav-toggle">GETTING STARTED</button>
+                    <ul class="docs-nav-list">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#prerequisites">Prerequisites</a></li>
+                    </ul>
+                </div>
+                <div class="docs-nav-section">
+                    <button class="docs-nav-toggle active">SOFTWARE SETUP</button>
+                    <ul class="docs-nav-list active">
+                        <li><a href="#flash-sd" class="active">Flash SD Card</a></li>
+                        <li><a href="#network-config">Network Config</a></li>
+                    </ul>
+                </div>
+                <div class="docs-nav-section">
+                    <button class="docs-nav-toggle">HARDWARE ASSEMBLY</button>
+                    <ul class="docs-nav-list">
+                        <li><a href="#main-body">Main Body</a></li>
+                        <li><a href="#optics-module">Optics Module</a></li>
+                        <li><a href="#wiring">Wiring</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-main">
+            <div class="docs-breadcrumb">
+                <span>Docs</span>
+                <span class="breadcrumb-separator">></span>
+                <span>Software Setup</span>
+                <span class="breadcrumb-separator">></span>
+                <span>Flash SD Card</span>
+            </div>
+
+            <article class="docs-article">
+                <h1 class="docs-title">Flash the SD Card</h1>
+
+                <!-- Step 1 -->
+                <div class="docs-step">
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <h2 class="step-title">Download Raspberry Pi Imager</h2>
+                    </div>
+                    <div class="step-content">
+                        <p class="step-text">Unduh dan instal aplikasi resmi Raspberry Pi Imager dari <a href="#"
+                                class="docs-link">situs web</a> mereka.</p>
+
+                        <div class="info-box">
+                            <div class="info-box-header">
+                                <h3 class="info-box-title">Raspberry Pi Imager</h3>
+                            </div>
+                            <p class="info-box-text">Raspberry Pi Imager is the quick and easy way to install Raspberry
+                                Pi OS and other operating systems to a microSD card, ready to use with your Raspberry
+                                Pi.</p>
+                            <p class="info-box-text">Download and install Raspberry Pi Imager on a computer with an SD
+                                card reader. Insert the microSD card you'll use with your Raspberry Pi into the reader
+                                and run Raspberry Pi Imager.</p>
+
+                            <div class="download-buttons">
+                                <button class="download-btn">Download for Windows</button>
+                                <a href="#" class="download-link">Download for macOS</a>
+                                <a href="#" class="download-link">Download for Linux (x86_64)</a>
+                            </div>
+
+                            <div class="code-block">
+                                <p class="code-label">To install on Raspberry Pi OS, type:</p>
+                                <code>sudo apt install rpi-imager</code>
+                                <p class="code-note">into a terminal window</p>
+                            </div>
+
+                            <div class="screenshot-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="docs-step">
+                    <div class="step-header">
+                        <span class="step-number">2</span>
+                        <h2 class="step-title">Select OS</h2>
+                    </div>
+                    <div class="step-content">
+                        <p class="step-text">Pilih 'Use Custom' dan cari file .img OpenFlexure yang sudah Anda download
+                            dari halaman Downloads.</p>
+
+                        <div class="info-box">
+                            <div class="info-box-header">
+                                <h3 class="info-box-title">Raspberry Pi Imager</h3>
+                            </div>
+                            <p class="info-box-text">Raspberry Pi Imager is the quick and easy way to install Raspberry
+                                Pi OS and other operating systems to a microSD card, ready to use with your Raspberry
+                                Pi.</p>
+                            <p class="info-box-text">Download and install Raspberry Pi Imager on a computer with an SD
+                                card reader. Insert the microSD card you'll use with your Raspberry Pi into the reader
+                                and run Raspberry Pi Imager.</p>
+
+                            <div class="download-buttons">
+                                <button class="download-btn">Download for Windows</button>
+                                <a href="#" class="download-link">Download for macOS</a>
+                                <a href="#" class="download-link">Download for Linux (x86_64)</a>
+                            </div>
+
+                            <div class="code-block">
+                                <p class="code-label">To install on Raspberry Pi OS, type:</p>
+                                <code>sudo apt install rpi-imager</code>
+                                <p class="code-note">into a terminal window</p>
+                            </div>
+
+                            <div class="screenshot-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="../assets/images/itb.svg" alt="ITB Logo" class="footer-logo">
+                <div>
+                    <h3 class="footer-title">Institut Teknologi Bandung</h3>
+                    <p class="footer-text">Proyek mikroskop sumber terbuka yang dibuat untuk aksesibilitas dan sains
+                        presisi.</p>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../downloads.html">Unduh</a></li>
+                    <li><a href="../docs.html">Dokumentasi</a></li>
+                    <li><a href="../about.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-source">
+                <h4 class="footer-heading">Sumber</h4>
+                <a href="" class="github-button">
+                    <span class="github-icon"></span>
+                    Github
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Laboratorium Biomedis - Institut Teknologi Bandung. OpenFlexure Diagnostics Project. Didukung oleh
+                Sekolah Teknik Elektronika dan Informatika</p>
+        </div>
+    </footer>
+</body>
+
+</html>
