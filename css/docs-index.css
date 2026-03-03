@@ -1,0 +1,124 @@
+.docs-home-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-navy) 0%,
+    var(--secondary-navy) 100%
+  );
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.docs-home-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.docs-home-hero p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.docs-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.docs-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.docs-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-teal);
+}
+
+.docs-card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.docs-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.docs-card p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.docs-card .card-arrow {
+  color: var(--accent-teal);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.docs-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.prereq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.prereq-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--text-dark);
+}
+
+.prereq-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.prereq-list li {
+  background: var(--bg-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  border: 1px solid var(--border-gray);
+}
+
+.prereq-list li span.icon {
+  font-size: 1.3rem;
+}

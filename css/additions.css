@@ -1,0 +1,91 @@
+
+/* ===========================
+   Mobile Nav Toggle (Hamburger)
+   =========================== */
+.nav-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.nav-mobile-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-dark);
+    border-radius: 2px;
+    transition: all var(--transition-normal);
+    transform-origin: center;
+}
+
+.nav-mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.nav-mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .nav-mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70vw;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--bg-white);
+        flex-direction: column;
+        gap: 0;
+        padding: 5rem 2rem 2rem;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+        transition: right var(--transition-normal);
+        z-index: 1000;
+        align-items: flex-start;
+    }
+
+    .nav-menu.nav-open {
+        right: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        border-bottom: 1px solid var(--border-gray);
+        padding: 0.75rem 0;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+}
+
+/* ===========================
+   Docs Step Scroll Target Padding
+   =========================== */
+.docs-step {
+    scroll-margin-top: 100px;
+}
+
+/* ===========================
+   BOM Table Responsive
+   =========================== */
+@media (max-width: 768px) {
+    .bom-table {
+        font-size: 0.8rem;
+    }
+    .bom-table th, .bom-table td {
+        padding: 0.5rem 0.6rem;
+    }
+}

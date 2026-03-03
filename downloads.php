@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unduh - OpenFlexure ITB</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/images/itb.svg" alt="ITB Logo" class="logo-img">
-                <span class="logo-text">OpenFlexure ITB</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="downloads.html" class="nav-link active">Unduh</a></li>
-                <li><a href="docs/index.html" class="nav-link">Dokumentasi</a></li>
-                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
-            </ul>
-        </div>
-    </nav>
-
+<?php
+$page_title = 'Unduh - OpenFlexure ITB';
+include 'components/header.php';
+?>
     <!-- Downloads Content -->
     <section class="downloads-section">
         <div class="downloads-container">
@@ -148,39 +126,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <img src="assets/images/itb.svg" alt="ITB Logo" class="footer-logo">
-                <div>
-                    <h3 class="footer-title">Institut Teknologi Bandung</h3>
-                    <p class="footer-text">Proyek mikroskop sumber terbuka yang dibuat untuk aksesibilitas dan sains
-                        presisi.</p>
-                </div>
-            </div>
-            <div class="footer-menu">
-                <h4 class="footer-heading">Menu</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="downloads.html">Unduh</a></li>
-                    <li><a href="docs.html">Dokumentasi</a></li>
-                    <li><a href="about.html">Tentang Kami</a></li>
-                </ul>
-            </div>
-            <div class="footer-source">
-                <h4 class="footer-heading">Sumber</h4>
-                <a href="https://github.com" class="github-button">
-                    <span class="github-icon"></span>
-                    Github
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 Laboratorium Biomedis - Institut Teknologi Bandung. OpenFlexure Diagnostics Project. Didukung oleh
-                Sekolah Teknik Elektronika dan Informatika</p>
-        </div>
-    </footer>
-</body>
-
-</html>
+<?php
+include 'components/footer.php';
+?>
