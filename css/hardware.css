@@ -169,23 +169,17 @@
             background: var(--accent-teal);
         }
 
-        .docs-progress {
-            display: flex;
-            gap: 0.25rem;
-            margin-bottom: 2rem;
+        /* ── Sticky Reading Progress Bar ── */
+        #reading-progress-bar {
+            position: fixed;
+            top: 73px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-teal), var(--accent-teal-light));
+            z-index: 999;
+            transition: width 0.1s linear;
+            border-radius: 0 2px 2px 0;
+            box-shadow: 0 0 6px rgba(0, 131, 143, 0.4);
         }
-
-        .progress-item {
-            flex: 1;
-            height: 4px;
-            background: var(--border-gray);
-            border-radius: 2px;
-        }
-
-        .progress-item.done {
-            background: var(--accent-teal);
-        }
-
-        .progress-item.active {
-            background: var(--accent-teal-light);
-        }
+        

@@ -33,7 +33,9 @@ include 'components/header.php';
             <!-- Lead -->
             <div class="team-lead">
                 <div class="team-member-card lead-card">
-                    <div class="member-photo"></div>
+                    <div class="member-photo">
+                        <img src="assets/images/team/1.jpeg" alt="Budi Santoso">
+                    </div>
                     <h3 class="member-name">BUDI SANTOSO</h3>
                     <p class="member-role">Software & Computer Vision Engineer</p>
                     <p class="member-desc">Mengembangkan algoritma pengolahan citra untuk deteksi otomatis serta
@@ -44,19 +46,25 @@ include 'components/header.php';
             <!-- Team Members -->
             <div class="team-grid">
                 <div class="team-member-card">
-                    <div class="member-photo"></div>
+                    <div class="member-photo">
+                        <img src="assets/images/team/2.jpeg" alt="Rizky Pratama">
+                    </div>
                     <h3 class="member-name">RIZKY PRATAMA</h3>
                     <p class="member-role">Lead Mechanical Engineer</p>
                     <p class="member-desc">Merancang struktur modular dan menyempurnakan sistem aktuator presisi.</p>
                 </div>
                 <div class="team-member-card">
-                    <div class="member-photo"></div>
+                    <div class="member-photo">
+                        <img src="assets/images/team/3.jpeg" alt="Rahmat Hidayat">
+                    </div>
                     <h3 class="member-name">RAHMAT HIDAYAT</h3>
                     <p class="member-role">Embedded Systems Developer</p>
                     <p class="member-desc">Mengintegrasikan Raspberry Pi serta mengembangkan antarmuka pengguna.</p>
                 </div>
                 <div class="team-member-card">
-                    <div class="member-photo"></div>
+                    <div class="member-photo">
+                        <img src="assets/images/team/4.jpeg" alt="Ryan Gosling">
+                    </div>
                     <h3 class="member-name">RYAN GOSLING</h3>
                     <p class="member-role">Biomedical Researcher</p>
                     <p class="member-desc">Melakukan validasi sampel klinis dan standarisasi protokol medis.</p>

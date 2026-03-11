@@ -110,6 +110,9 @@ include '../components/header.php';
 }
 </style>
 
+<!-- Sticky Reading Progress Bar -->
+<div id="reading-progress-bar"></div>
+
 <!-- Docs Layout -->
 <div class="docs-layout">
     <!-- Sidebar -->
@@ -125,7 +128,7 @@ include '../components/header.php';
             <div class="docs-nav-section">
                 <button class="docs-nav-toggle active">HARDWARE ASSEMBLY</button>
                 <ul class="docs-nav-list active">
-                    <li><a href="#bom" class="active">Bill of Materials</a></li>
+                    <li><a href="#bom">Bill of Materials</a></li>
                     <li><a href="#tahap-1">Tahap 1: Base Plate</a></li>
                     <li><a href="#tahap-2">Tahap 2: Bracket & Lead Screw</a></li>
                     <li><a href="#tahap-3">Tahap 3: Motor Y-Axis</a></li>
@@ -158,23 +161,6 @@ include '../components/header.php';
             <h1 class="docs-title">Panduan Perakitan Hardware</h1>
             <p class="step-text">Panduan lengkap perakitan Automated Microscope dari awal hingga siap digunakan. Ikuti setiap tahap secara berurutan untuk memastikan hasil yang optimal.</p>
 
-            <!-- Upload tip -->
-            <div class="upload-tip">
-                <span class="tip-icon">📷</span>
-                <span>Ganti placeholder di bawah dengan foto perakitan asli. Simpan gambar di <strong>assets/images/assembly/</strong> dengan nama file yang tertera di setiap placeholder.</span>
-            </div>
-
-            <!-- Progress Bar -->
-            <div class="docs-progress">
-                <div class="progress-item done"></div>
-                <div class="progress-item done"></div>
-                <div class="progress-item active"></div>
-                <div class="progress-item"></div>
-                <div class="progress-item"></div>
-                <div class="progress-item"></div>
-                <div class="progress-item"></div>
-                <div class="progress-item"></div>
-            </div>
 
             <!-- ═══════════════════════════════════════
                  BILL OF MATERIALS
@@ -779,5 +765,50 @@ include '../components/header.php';
         </article>
     </main>
 </div>
+
+<script>
+(function () {
+    /* ── Reading Progress Bar ── */
+    const bar = document.getElementById('reading-progress-bar');
+
+    function updateReadingProgress() {
+        const scrollTop    = window.scrollY;
+        const docHeight    = document.documentElement.scrollHeight - window.innerHeight;
+        const pct          = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        bar.style.width    = pct.toFixed(1) + '%';
+    }
+
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    updateReadingProgress(); // init on load
+
+    /* ── Sidebar Scroll-Spy ── */
+    const sectionIds = ['bom','tahap-1','tahap-2','tahap-3','tahap-4','tahap-5','tahap-6','tahap-7','tahap-8'];
+    const navLinks   = Array.from(document.querySelectorAll('.docs-nav-list a[href^="#"]'));
+
+    function setNavActive(id) {
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href').replace('#','') === id);
+        });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+            .filter(e => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) setNavActive(visible[0].target.id);
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+
+    sectionIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            setNavActive(this.getAttribute('href').replace('#',''));
+        });
+    });
+})();
+</script>
 
 <?php include '../components/footer.php'; ?>
