@@ -325,13 +325,9 @@ include '../components/header.php';
                     </li>
                 </ul>
 
-                <!-- IMG: Ball Bearing ke Cover Kiri Belakang -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t1-bearing-cover.jpg</span>
-                    <span class="ph-label">Ball Bearing 688ZZ dimasukkan ke slot Cover Kiri Belakang pada Base Plate</span>
-                </div>
+                <img src="../assets/images/assembly/t1-bearing-cover.jpg" 
+                alt="Ball Bearing 688ZZ dimasukkan ke slot Cover Kiri Belakang pada Base Plate"
+                class="step-img">
                 <p class="img-caption">Gambar 1.1 — Pemasangan Ball Bearing 688ZZ pada Cover Kiri Belakang</p>
 
                 <ul class="sub-steps">
@@ -345,16 +341,11 @@ include '../components/header.php';
                     <strong>📌 Catatan:</strong> Pasang masing-masing 2 nut di setiap sudut, <em>kecuali</em> sudut yang dekat dengan Cover Kiri Belakang (karena sudah ada bearing di sana).
                 </div>
 
-                <!-- IMG: M3 Nut di sudut Base Plate -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t1-nut-baseplate.jpg</span>
-                    <span class="ph-label">6× M3 Nut terpasang di sudut-sudut Base Plate (2 per sudut, 3 sudut)</span>
-                </div>
+                <img src="../assets/images/assembly/t1-nut-baseplate.jpg" 
+                alt="6× M3 Nut terpasang di sudut-sudut Base Plate (2 per sudut, 3 sudut)"
+                class="step-img">
                 <p class="img-caption">Gambar 1.2 — M3 Nut terpasang di sudut-sudut Base Plate</p>
             </div>
-
             <!-- ═══════════════════════════════════════
                  TAHAP 2
             ══════════════════════════════════════════ -->
@@ -380,18 +371,10 @@ include '../components/header.php';
 
                 <!-- IMG pair: Left Bracket sebelum & sesudah -->
                 <div class="img-pair">
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-left-bracket-1.jpg</span>
-                        <span class="ph-label">Left Bracket — posisi slot bearing dan lubang nut</span>
-                    </div>
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-left-bracket-2.jpg</span>
-                        <span class="ph-label">Lead Screw Nut terpasang pada Left Bracket dengan M3 Screw 16 mm</span>
-                    </div>
+                    <img src="../assets/images/assembly/t2-left-bracket-1.jpg" 
+                         alt="Left Bracket sebelum" class="step-img">
+                    <img src="../assets/images/assembly/t2-left-bracket-2.jpg" 
+                         alt="Left Bracket sesudah" class="step-img">
                 </div>
                 <p class="img-caption">Gambar 2.1 — Pemasangan Lead Screw Nut pada Left Bracket</p>
 
@@ -407,12 +390,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Right Cover terpasang -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t2-right-cover.jpg</span>
-                    <span class="ph-label">Cover Kanan terpasang di bagian belakang kanan Base Plate</span>
-                </div>
+                <img src="../assets/images/assembly/t2-right-cover.jpg" 
+                     alt="Cover Kanan terpasang di bagian belakang kanan Base Plate"
+                     class="step-img">
                 <p class="img-caption">Gambar 2.2 — Pemasangan Cover Kanan pada Base Plate</p>
 
                 <p class="step-section-title">B. Penyatuan Komponen (Assembly)</p>
@@ -424,12 +404,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Middle Assembly landscape -->
-                <div class="img-placeholder landscape">
-                    <span class="ph-badge">LANDSCAPE</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t2-middle-assembly.jpg</span>
-                    <span class="ph-label">Middle Bracket dengan Lead Screw 142 mm dan 2× Ball Bearing 688ZZ terpasang di dalamnya</span>
-                </div>
+                <img src="../assets/images/assembly/t2-middle-assembly.jpg" 
+                     alt="Middle Bracket dengan Lead Screw 142 mm dan 2× Ball Bearing 688ZZ terpasang di dalamnya"
+                     class="step-img">
                 <p class="img-caption">Gambar 2.3 — Middle Assembly dengan Lead Screw dan Ball Bearing</p>
 
                 <ul class="sub-steps">
@@ -444,12 +421,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Back Cover terpasang -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t2-back-cover.jpg</span>
-                    <span class="ph-label">Back Cover mengunci posisi Left dan Right Bracket dengan 8× M3 Self Tapping Screw</span>
-                </div>
+                <img src="../assets/images/assembly/t2-back-cover.jpg" 
+                     alt="Back Cover mengunci posisi Left dan Right Bracket dengan 8× M3 Self Tapping Screw"
+                     class="step-img">
                 <p class="img-caption">Gambar 2.4 — Back Cover terpasang mengunci posisi bracket</p>
 
                 <p class="step-section-title">C. Pemasangan Rods & Lead Screw Panjang</p>
@@ -461,12 +435,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Linear Rods terpasang -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t2-linear-rods.jpg</span>
-                    <span class="ph-label">5× Linear Rods (4×160 mm) terpasang: 2 di Left Bracket, 3 di Right Bracket</span>
-                </div>
+                <img src="../assets/images/assembly/t2-linear-rods.jpg" 
+                     alt="5× Linear Rods (4×160 mm) terpasang: 2 di Left Bracket, 3 di Right Bracket"
+                     class="step-img">
                 <p class="img-caption">Gambar 2.5 — Pemasangan Linear Rods pada bracket</p>
 
                 <ul class="sub-steps">
@@ -477,12 +448,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: T8 Lead Screw -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t2-lead-screw-173.jpg</span>
-                    <span class="ph-label">T8 Lead Screw 173 mm terpasang sejajar dengan Linear Rods, ujung menembus Ball Bearing Base Plate</span>
-                </div>
+                <img src="../assets/images/assembly/t2-lead-screw-173.jpg" 
+                     alt="T8 Lead Screw 173 mm terpasang sejajar dengan Linear Rods, ujung menembus Ball Bearing Base Plate"
+                     class="step-img">
                 <p class="img-caption">Gambar 2.6 — T8 Lead Screw 173 mm terpasang pada Left Bracket</p>
 
                 <p class="step-section-title">D. Penutupan Akhir (Flexible Covers)</p>
@@ -495,18 +463,12 @@ include '../components/header.php';
 
                 <!-- IMG pair: Left Cover -->
                 <div class="img-pair">
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-left-cover-1.jpg</span>
-                        <span class="ph-label">Left Flexible Cover sebelum dipasang — tampak lubang untuk Rods dan Bearing</span>
-                    </div>
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-left-cover-2.jpg</span>
-                        <span class="ph-label">Left Flexible Cover terpasang pada Base Plate</span>
-                    </div>
+                    <img src="../assets/images/assembly/t2-left-cover-1.jpg" 
+                         alt="Left Flexible Cover sebelum dipasang — tampak lubang untuk Rods dan Bearing"
+                         class="step-img">
+                    <img src="../assets/images/assembly/t2-left-cover-2.jpg" 
+                         alt="Left Flexible Cover sesudah dipasang"
+                         class="step-img">
                 </div>
                 <p class="img-caption">Gambar 2.7 — Pemasangan Left Flexible Cover</p>
 
@@ -519,18 +481,12 @@ include '../components/header.php';
 
                 <!-- IMG pair: Right Cover -->
                 <div class="img-pair">
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-right-flex-cover-1.jpg</span>
-                        <span class="ph-label">Right Flexible Cover — tampak 3 lubang untuk Linear Rods</span>
-                    </div>
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t2-right-flex-cover-2.jpg</span>
-                        <span class="ph-label">Right Flexible Cover terpasang, Rods masuk ke lubang dengan pas</span>
-                    </div>
+                    <img src="../assets/images/assembly/t2-right-flex-cover-1.jpg" 
+                         alt="Right Flexible Cover — tampak 3 lubang untuk Linear Rods"
+                         class="step-img">
+                    <img src="../assets/images/assembly/t2-right-flex-cover-2.jpg" 
+                         alt="Right Flexible Cover terpasang, Rods masuk ke lubang dengan pas"
+                         class="step-img">
                 </div>
                 <p class="img-caption">Gambar 2.8 — Pemasangan Right Flexible Cover</p>
 
@@ -582,18 +538,12 @@ include '../components/header.php';
 
                 <!-- IMG pair: Gearbox Y-Axis -->
                 <div class="img-pair">
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t3-gearbox-y-1.jpg</span>
-                        <span class="ph-label">Rakitan planet gear di dalam housing sebelum ditutup Output Hub</span>
-                    </div>
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t3-gearbox-y-2.jpg</span>
-                        <span class="ph-label">Gearbox Y-Axis lengkap — Output Hub terpasang, M3 Nut di sudut Housing</span>
-                    </div>
+                    <img src="../assets/images/assembly/t3-gearbox-y-1.jpg" 
+                         alt="Rakitan planet gear di dalam housing sebelum ditutup Output Hub"
+                         class="step-img">
+                    <img src="../assets/images/assembly/t3-gearbox-y-2.jpg" 
+                         alt="Gearbox Y-Axis lengkap — Output Hub terpasang, M3 Nut di sudut Housing"
+                         class="step-img">
                 </div>
                 <p class="img-caption">Gambar 3.1 — Rakitan Gearbox Y-Axis</p>
 
@@ -604,12 +554,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: SRAM DUB Bearing + Face Plate Rectangle -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t3-faceplate-bearing-y.jpg</span>
-                    <span class="ph-label">SRAM DUB Bearing (29×42×7 mm) terpasang bersama Face Plate Rectangle</span>
-                </div>
+                <img src="../assets/images/assembly/t3-faceplate-bearing-y.jpg" 
+                     alt="SRAM DUB Bearing (29×42×7 mm) terpasang bersama Face Plate Rectangle"
+                     class="step-img">
                 <p class="img-caption">Gambar 3.2 — SRAM DUB Bearing dan Face Plate Rectangle</p>
 
                 <ul class="sub-steps">
@@ -617,12 +564,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Motor Y terpasang di base -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t3-motor-y-mounted.jpg</span>
-                    <span class="ph-label">Motor Y-Axis beserta gearbox terpasang penuh pada base plate dengan 3× M3 Screw 32 mm</span>
-                </div>
+                <img src="../assets/images/assembly/t3-motor-y-mounted.jpg" 
+                     alt="Motor Y-Axis beserta gearbox terpasang penuh pada base plate dengan 3× M3 Screw 32 mm"
+                     class="step-img">
                 <p class="img-caption">Gambar 3.3 — Motor Y-Axis terpasang pada base plate</p>
             </div>
 
@@ -671,12 +615,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Motor X terpasang — landscape -->
-                <div class="img-placeholder landscape">
-                    <span class="ph-badge">LANDSCAPE</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t4-motor-x-mounted.jpg</span>
-                    <span class="ph-label">Motor X-Axis terpasang dengan Face Plate Square dan 2× M3 Screw 50 mm</span>
-                </div>
+                <img src="../assets/images/assembly/t4-motor-x-mounted.jpg" 
+                     alt="Motor X-Axis terpasang dengan Face Plate Square dan 2× M3 Screw 50 mm"
+                     class="step-img">
                 <p class="img-caption">Gambar 4.1 — Motor X-Axis terpasang pada base plate</p>
             </div>
 
@@ -699,18 +640,12 @@ include '../components/header.php';
 
                 <!-- IMG pair: Rangka di atas plate + setelah dikunci -->
                 <div class="img-pair">
-                    <div class="img-placeholder">
-                        <span class="ph-badge">PORTRAIT</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t5-alignment.jpg</span>
-                        <span class="ph-label">Rangka ditempatkan di atas plate mikroskop — tampak 4 lubang yang disejajarkan</span>
-                    </div>
-                    <div class="img-placeholder">
-                        <span class="ph-badge">LANDSCAPE</span>
-                        <span class="ph-icon">🖼️</span>
-                        <span class="ph-filename">assembly/t5-locked.jpg</span>
-                        <span class="ph-label">Rangka terkunci penuh ke mikroskop dengan 4× M3 Screw 26 mm</span>
-                    </div>
+                    <img src="../assets/images/assembly/t5-alignment.jpg" 
+                         alt="Rangka ditempatkan di atas plate mikroskop — tampak 4 lubang yang disejajarkan"
+                         class="step-img">
+                    <img src="../assets/images/assembly/t5-locked.jpg" 
+                         alt="Rangka terkunci penuh ke mikroskop dengan 4× M3 Screw 26 mm"
+                         class="step-img">
                 </div>
                 <p class="img-caption">Gambar 5.1 — Rangka terpasang pada plate mikroskop</p>
             </div>
@@ -740,12 +675,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Base Preparat dengan spring + clipper -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t6-base-preparat.jpg</span>
-                    <span class="ph-label">Unit Base Preparat lengkap — 2× clipper terpasang dengan spring, M4 Screw, Ring, dan Nut</span>
-                </div>
+                <img src="../assets/images/assembly/t6-base-preparat.jpg" 
+                     alt="Unit Base Preparat lengkap — 2× clipper terpasang dengan spring, M4 Screw, Ring, dan Nut"
+                     class="step-img">
                 <p class="img-caption">Gambar 6.1 — Unit Base Preparat dengan clipper dan spring terpasang</p>
 
                 <p class="step-section-title">B. Pemasangan ke Sistem Gerak</p>
@@ -756,12 +688,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Base Preparat di Middle Bracket -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t6-preparat-mounted.jpg</span>
-                    <span class="ph-label">Base Preparat terpasang pada Middle Bracket, dikunci dengan M3 Ring dan M3 Screw 27 mm</span>
-                </div>
+                <img src="../assets/images/assembly/t6-preparat-mounted.jpg" 
+                     alt="Base Preparat terpasang pada Middle Bracket, dikunci dengan M3 Ring dan M3 Screw 27 mm"
+                     class="step-img">
                 <p class="img-caption">Gambar 6.2 — Base Preparat terpasang pada Middle Bracket</p>
             </div>
 
@@ -784,12 +713,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Kamera di dalam mounting -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t7-camera-mount.jpg</span>
-                    <span class="ph-label">Kamera terpasang di dalam Mounting Camera adapter — tampak lensa menghadap ke dalam</span>
-                </div>
+                <img src="../assets/images/assembly/t7-camera-mount.jpg" 
+                     alt="Kamera terpasang di dalam Mounting Camera adapter — tampak lensa menghadap ke dalam"
+                     class="step-img">
                 <p class="img-caption">Gambar 7.1 — Kamera terpasang pada Mounting Camera adapter</p>
 
                 <ul class="sub-steps">
@@ -797,13 +723,10 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Camera unit di jalur optik -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t7-camera-installed.jpg</span>
-                    <span class="ph-label">Unit kamera dan mounting terpasang di dalam lubang Optical Path mikroskop</span>
-                </div>
-                <p class="img-caption">Gambar 7.2 — Unit kamera terpasang di jalur optik mikroskop</p>
+                <img src="../assets/images/assembly/t7-camera-installed.jpg" 
+                     alt="Unit kamera dan mounting terpasang di dalam lubang Optical Path mikroskop"
+                     class="step-img">
+                <p class="img-caption">Gambar 7.2 — Unit kamera dan mounting terpasang di dalam lubang Optical Path mikroskop</p>
             </div>
 
             <!-- ═══════════════════════════════════════
@@ -827,12 +750,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Control Base di stand -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t8-control-base.jpg</span>
-                    <span class="ph-label">Control Base ditempel pada Stand Microscope menggunakan Double Tape — posisi tidak mengganggu pergerakan meja</span>
-                </div>
+                <img src="../assets/images/assembly/t8-control-base.jpg" 
+                     alt="Control Base ditempel pada Stand Microscope menggunakan Double Tape — posisi tidak mengganggu pergerakan meja"
+                     class="step-img">
                 <p class="img-caption">Gambar 8.1 — Control Base terpasang pada stand mikroskop</p>
 
                 <ul class="sub-steps">
@@ -840,12 +760,9 @@ include '../components/header.php';
                 </ul>
 
                 <!-- IMG: Control Case tertutup -->
-                <div class="img-placeholder portrait">
-                    <span class="ph-badge">PORTRAIT</span>
-                    <span class="ph-icon">🖼️</span>
-                    <span class="ph-filename">assembly/t8-control-case.jpg</span>
-                    <span class="ph-label">Control Case menutup rapat di atas Control Base — tampak snap-fit atau pengunci terpasang</span>
-                </div>
+                <img src="../assets/images/assembly/t8-control-case.jpg" 
+                     alt="Control Case menutup rapat di atas Control Base — tampak snap-fit atau pengunci terpasang"
+                     class="step-img">
                 <p class="img-caption">Gambar 8.2 — Control Case menutup komponen elektronik</p>
 
                 <div class="step-note">
