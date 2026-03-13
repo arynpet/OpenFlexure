@@ -2,7 +2,7 @@
 
 Website untuk proyek OpenFlexure Diagnostics - Deteksi TBC Presisi Berbasis Open Source dari Institut Teknologi Bandung.
 
-## 📁 Struktur File
+## Struktur File
 
 ```text
 openflexure-itb/
