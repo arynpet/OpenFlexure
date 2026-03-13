@@ -9,13 +9,12 @@ include 'components/header.php';
         <p class="hero-subtitle">Mengembangkan solusi mikroskop berbiaya rendah dengan presisi tinggi untuk
             mendukung diagnosis Tuberkulosis (TBC) yang lebih cepat dan akurat di Indonesia.</p>
         <div class="hero-buttons">
-            <a href="downloads.html" class="btn btn-primary">Unduh</a>
-            <a href="docs.html" class="btn btn-secondary">Dokumentasi</a>
+            <a href="downloads.php" class="btn btn-primary">Unduh</a>
+            <a href="docs/index.php" class="btn btn-secondary">Dokumentasi</a>
         </div>
     </div>
 
-
-    <img src="assets/images/mikroskop.png" alt="Microscope" class="hero-microscope">
+    <img loading="lazy" src="assets/images/mikroskop.webp" alt="Microscope" class="hero-microscope">
 </section>
 
 <!-- Features Section -->
@@ -29,7 +28,7 @@ include 'components/header.php';
                     <p class="feature-description">Visualisasi jelas basil TBC berukuran mikrometer.</p>
                 </div>
                 <div class="feature-image">
-                    <div class="microscope-view"><img src="./assets/images/preparat1.jpg" alt=""></div>
+                    <div class="microscope-view"><img loading="lazy" src="./assets/images/preparat1.webp" alt="Citra mikroskopik preparat TBC"></div>
                 </div>
             </div>
             <div class="feature-card card-vertical">
@@ -38,21 +37,21 @@ include 'components/header.php';
                     <p class="feature-description">Komponen modular yang mudah dicetak dan diperbaiki.</p>
                 </div>
                 <div class="feature-image">
-                    <div class="printing-parts"><img src="./assets/images/3Dpart.jpg" alt=""></div>
+                    <div class="printing-parts"><img loading="lazy" src="./assets/images/3Dpart.webp" alt="Komponen 3D printing"></div>
                 </div>
             </div>
             <div class="feature-card card-centered">
-                <div class="feature-icon raspberry-icon"><img src="./assets/images/raspberry.svg" alt=""></div>
+                <div class="feature-icon raspberry-icon"><img loading="lazy" src="./assets/images/raspberry.svg" alt="Raspberry Pi logo"></div>
                 <h3 class="feature-title">Terintegrasi Raspberry Pi</h3>
                 <p class="feature-description">Sistem digital otomatis untuk kontrol dan pencatatan.</p>
             </div>
             <div class="feature-card card-centered">
-                <div class="feature-icon opensource-icon"><img src="./assets/images/github.svg" alt=""></div>
+                <div class="feature-icon opensource-icon"><img loading="lazy" src="./assets/images/github.svg" alt="GitHub logo"></div>
                 <h3 class="feature-title">100% Desain Open Source</h3>
                 <p class="feature-description">Akses penuh desain dan kode untuk kolaborasi.</p>
             </div>
             <div class="feature-card card-centered">
-                <div class="feature-icon cost-icon"><img src="./assets/images/affordable-icon.svg" alt=""></div>
+                <div class="feature-icon cost-icon"><img loading="lazy" src="./assets/images/affordable-icon.svg" alt="Ikon biaya efektif"></div>
                 <h3 class="feature-title">Solusi Biaya Efektif</h3>
                 <p class="feature-description">Alternatif diagnosis berkualitas dengan biaya rendah.</p>
             </div>
@@ -66,7 +65,7 @@ include 'components/header.php';
         <h2 class="section-title">Galeri Citra Diagnostik</h2>
     </div>
     <div class="gallery-slider">
-        <button class="gallery-nav prev">&lt;</button>
+        <button class="gallery-nav prev" aria-label="Slide sebelumnya">&lt;</button>
         <div class="gallery-track">
             <div class="gallery-slide active">
                 <div class="gallery-image"></div>
@@ -74,7 +73,7 @@ include 'components/header.php';
                     keberadaan basil TBC merah (Ziehl-Neelsen stain).</p>
             </div>
         </div>
-        <button class="gallery-nav next">&gt;</button>
+        <button class="gallery-nav next" aria-label="Slide berikutnya">&gt;</button>
     </div>
 </section>
 <?php

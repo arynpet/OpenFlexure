@@ -1,0 +1,11 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE Configurations (Antigravity & VS Code)
+.vscode/
+.antigravity/
+
+# AI Agent Artifacts & Logs
+.artifacts/
+*.log

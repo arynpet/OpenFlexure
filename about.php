@@ -1,5 +1,6 @@
 <?php
 $page_title = 'Tentang Kami - OpenFlexure ITB';
+$base_url = '';  // halaman root, tidak perlu prefix
 include 'components/header.php';
 ?>
 
@@ -34,7 +35,7 @@ include 'components/header.php';
             <div class="team-lead">
                 <div class="team-member-card lead-card">
                     <div class="member-photo">
-                        <img src="assets/images/team/1.jpeg" alt="Budi Santoso">
+                        <img loading="lazy" src="assets/images/team/1.webp" alt="Budi Santoso">
                     </div>
                     <h3 class="member-name">BUDI SANTOSO</h3>
                     <p class="member-role">Software & Computer Vision Engineer</p>
@@ -47,7 +48,7 @@ include 'components/header.php';
             <div class="team-grid">
                 <div class="team-member-card">
                     <div class="member-photo">
-                        <img src="assets/images/team/2.jpeg" alt="Rizky Pratama">
+                        <img loading="lazy" src="assets/images/team/2.webp" alt="Rizky Pratama">
                     </div>
                     <h3 class="member-name">RIZKY PRATAMA</h3>
                     <p class="member-role">Lead Mechanical Engineer</p>
@@ -55,7 +56,7 @@ include 'components/header.php';
                 </div>
                 <div class="team-member-card">
                     <div class="member-photo">
-                        <img src="assets/images/team/3.jpeg" alt="Rahmat Hidayat">
+                        <img loading="lazy" src="assets/images/team/3.webp" alt="Rahmat Hidayat">
                     </div>
                     <h3 class="member-name">RAHMAT HIDAYAT</h3>
                     <p class="member-role">Embedded Systems Developer</p>
@@ -63,7 +64,7 @@ include 'components/header.php';
                 </div>
                 <div class="team-member-card">
                     <div class="member-photo">
-                        <img src="assets/images/team/4.jpeg" alt="Ryan Gosling">
+                        <img loading="lazy" src="assets/images/team/4.webp" alt="Ryan Gosling">
                     </div>
                     <h3 class="member-name">RYAN GOSLING</h3>
                     <p class="member-role">Biomedical Researcher</p>

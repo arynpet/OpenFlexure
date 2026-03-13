@@ -4,141 +4,116 @@ Website untuk proyek OpenFlexure Diagnostics - Deteksi TBC Presisi Berbasis Open
 
 ## 📁 Struktur File
 
-```
+```text
 openflexure-itb/
-├── index.html          # Halaman Landing/Home
-├── about.html          # Halaman Tentang Kami & Tim
-├── docs.html           # Halaman Dokumentasi
-├── downloads.html      # Halaman Download/Unduh
-├── css/styles.css          # File CSS utama
-└── README.md           # File ini
+├── index.php                 # Halaman Landing/Home
+├── about.php                 # Halaman Tentang Kami & Tim
+├── downloads.php             # Halaman Download/Unduh
+├── README.md                 # Dokumentasi Repositori (File ini)
+├── assets/                   # Folder aset statis
+│   └── images/               # Kumpulan gambar (.webp & .svg)
+│       ├── assembly/         # Dokumentasi foto perakitan mikroskop
+│       └── team/             # Foto anggota tim
+├── components/               # Komponen template (diamankan dari akses publik)
+│   ├── .htaccess             # Aturan keamanan server
+│   ├── header.php            # Navigasi dan tag <head>
+│   └── footer.php            # Bagian footer website
+├── css/                      # Stylesheet
+│   ├── additions.css
+│   ├── docs-index.css
+│   ├── hardware.css
+│   └── styles.css
+├── docs/                     # Dokumentasi Proyek
+│   ├── hardware-assembly.php # Panduan perakitan hardware
+│   └── index.php             # Halaman utama dokumentasi
+└── js/                       # Skrip interaktivitas
+    └── main.js
 ```
 
-## 🎨 Fitur Desain
+## Fitur Desain
 
 ### Desain yang Diimplementasikan:
-- **Color Palette Profesional**: Navy blue, teal accent, dan neutral gray untuk tampilan ilmiah yang modern
-- **Typography**: Menggunakan kombinasi Barlow (heading) dan Inter (body text) untuk keterbacaan optimal
-- **Animations**: Animasi halus pada hover, fade-in effects, dan floating animation
-- **Responsive Layout**: Desain yang responsif untuk berbagai ukuran layar
-- **Grid System**: Implementasi CSS Grid dan Flexbox modern
-- **Micro-interactions**: Hover effects, transitions, dan visual feedback
+
+- **Color Palette Profesional**: Navy blue, teal accent, dan neutral gray untuk tampilan ilmiah yang modern.
+- **Typography**: Menggunakan kombinasi Barlow (heading) dan Inter (body text) untuk keterbacaan optimal.
+- **Animations**: Animasi halus pada hover, fade-in effects, dan floating animation.
+- **Responsive Layout**: Desain yang responsif untuk berbagai ukuran layar.
+- **Grid System**: Implementasi CSS Grid dan Flexbox modern.
+- **Micro-interactions**: Hover effects, transitions, dan visual feedback.
 
 ### Halaman yang Tersedia:
 
-1. **Landing Page (index.html)**
-   - Hero section dengan background gradient dan overlay pattern
-   - Features grid dengan card components
-   - Gallery slider untuk citra diagnostik
-   - Call-to-action buttons
+1. **Landing Page (`index.php`)**
 
-2. **About Page (about.html)**
-   - Hero section dengan outline text effect
-   - Informasi proyek dengan typography yang readable
-   - Team section dengan card layout
-   - Grid layout untuk anggota tim
+- Hero section dengan background gradient dan overlay pattern.
+- Features grid dengan card components.
+- Gallery slider untuk citra diagnostik.
 
-3. **Documentation Page (docs.html)**
-   - Two-column layout dengan sidebar navigation
-   - Numbered steps dengan visual indicators
-   - Code blocks dengan syntax highlighting style
-   - Info boxes untuk konten tambahan
-   - Collapsible navigation sections
+2. **About Page (`about.php`)**
 
-4. **Downloads Page (downloads.html)**
-   - Release information header
-   - File table dengan preview thumbnails
-   - Download buttons dengan hover effects
-   - Search functionality styling
-   - Material badges dan metadata display
+- Informasi proyek dengan typography yang readable.
+- Team section dengan card layout & grid untuk anggota tim.
 
-## 🚀 Cara Menggunakan
+3. **Documentation Page (`docs/index.php` & `docs/hardware-assembly.php`)**
 
-1. **Buka langsung di browser**:
-   - Buka file `index.html` di browser untuk melihat landing page
-   - Navigasi antar halaman menggunakan menu di navigation bar
+- Two-column layout dengan sidebar navigation.
+- Numbered steps dengan visual indicators.
+- Code blocks dengan syntax highlighting style.
 
-2. **Edit konten**:
-   - Edit file HTML untuk mengubah konten teks
-   - Ganti placeholder images dengan gambar asli (ITB logo, microscope images, team photos)
-   - Sesuaikan warna di CSS variables jika diperlukan
+4. **Downloads Page (`downloads.php`)**
 
-3. **Customization**:
-   - Semua warna didefinisikan sebagai CSS variables di bagian `:root`
-   - Typography scales bisa diatur melalui CSS variables
-   - Spacing menggunakan consistent spacing variables
+- File table dengan preview thumbnails.
+- Download buttons dengan hover effects.
 
-## 🎨 CSS Architecture
+## Cara Menjalankan Project
+
+Website ini menggunakan PHP untuk sistem _templating_ komponen. Kamu membutuhkan _local web server_ seperti **Laragon** atau **XAMPP** untuk menjalankannya.
+
+1. **Jalankan Web Server**: Aktifkan Apache di Laragon atau XAMPP.
+2. **Pindahkan Folder**: Pastikan folder project ini berada di dalam `htdocs` (XAMPP) atau `www` (Laragon).
+3. **Akses via Browser**: Buka `http://localhost/nama-folder-project/index.php`.
+4. **Edit Konten**: Edit file `.php` untuk mengubah teks, atau ubah variabel di folder `css/` untuk penyesuaian warna.
+
+## CSS Architecture
 
 ### Variables (Custom Properties)
+
 ```css
---primary-navy: #1a2332
---accent-teal: #00838f
---text-dark: #1a1a1a
---bg-light: #f8f9fa
+:root {
+  --primary-navy: #1a2332;
+  --accent-teal: #00838f;
+  --text-dark: #1a1a1a;
+  --bg-light: #f8f9fa;
+}
 ```
 
-### Typography Scale
-- Hero Title: 3rem (48px)
-- Section Title: 2.5rem (40px)
-- Card Title: 1.5rem (24px)
-- Body: 1rem (16px)
+### Typography Scale & Spacing System
 
-### Spacing System
-- xs: 0.5rem
-- sm: 1rem
-- md: 2rem
-- lg: 4rem
-- xl: 6rem
+- **Hero Title**: 3rem (48px) | **Section Title**: 2.5rem (40px) | **Body**: 1rem (16px)
+- **Spacing**: xs (0.5rem), sm (1rem), md (2rem), lg (4rem), xl (6rem)
 
-## 📝 Catatan Penting
+## Catatan Penting
 
-### Images yang Perlu Diganti:
-1. ITB Logo (`itb-logo.png`)
-2. Microscope images untuk hero dan features
-3. Team member photos
-4. Gallery diagnostic images
-5. 3D printing parts visuals
-6. File preview thumbnails
+### Fungsionalitas Tambahan (To-Do):
 
-### Fungsionalitas yang Bisa Ditambahkan:
-- JavaScript untuk gallery slider functionality
-- Search functionality untuk downloads page
-- Collapsible sidebar sections di docs
-- Smooth scroll navigation
-- Mobile menu toggle
+- JavaScript untuk gallery slider functionality.
+- Search functionality untuk downloads page.
+- Collapsible sidebar sections di docs.
+- Smooth scroll navigation & Mobile menu toggle.
 
-## 🔧 Browser Support
+## Browser Support & Responsivitas
 
-Website ini kompatibel dengan:
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- **Kompatibel dengan**: Chrome/Edge, Firefox, Safari (terbaru), serta Mobile browsers.
+- **Breakpoints**: Desktop (> 1024px), Tablet (768px - 1024px), Mobile (< 768px).
 
-## 📱 Responsive Breakpoints
+## Performance & Philosophy
 
-- Desktop: > 1024px
-- Tablet: 768px - 1024px
-- Mobile: < 768px
-
-## ⚡ Performance
-
-- Pure CSS (no external libraries selain Google Fonts)
-- Minimal HTTP requests
-- Optimized animations dengan CSS transforms
-- Mobile-first responsive approach
-
-## 🎯 Desain Philosophy
-
-Website ini didesain dengan prinsip:
-1. **Professional & Scientific**: Cocok untuk proyek riset akademis
-2. **Clean & Modern**: Desain minimalis tapi tidak membosankan
-3. **Accessible**: Readable typography dan color contrast yang baik
-4. **Performant**: Pure CSS tanpa dependencies berat
-5. **Distinctive**: Menghindari template generic dengan custom design choices
+- **Performa**: Optimasi gambar format WebP, pure CSS tanpa _library_ eksternal berat, meminimalisir HTTP _requests_.
+- **Filosofi**: Profesional, _Scientific_, _Clean_, _Accessible_, dan _Performant_.
 
 ---
 
+```
 Dibuat untuk OpenFlexure ITB - Institut Teknologi Bandung
 © 2024 Laboratorium Biomedis - Sekolah Teknik Elektronika dan Informatika
+```
