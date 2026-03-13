@@ -1,5 +1,6 @@
 <?php
 $page_title = 'Unduh - OpenFlexure ITB';
+$base_url = '';  // halaman root
 include 'components/header.php';
 ?>
     <!-- Downloads Content -->
@@ -17,24 +18,30 @@ include 'components/header.php';
                         <span class="release-size">45 MB</span>
                     </div>
                     <p class="release-description">Paket lengkap berisi seluruh file STL, dokumentasi, dan software
-                        untuk
-                        mikroskop standar.</p>
+                        untuk mikroskop standar.</p>
 
-                    <button class="download-full-btn">
+                    <!-- Ganti ke <a> agar bisa benar-benar mengunduh -->
+                    <a href="assets/downloads/openflexure-itb-v7.0.0-omega.zip"
+                       class="download-full-btn"
+                       download>
                         <span class="download-text">Downloads Full Package (.zip)</span>
                         <span class="download-icon">↓</span>
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Microscope Image -->
                 <div class="microscope-display">
-                    <img src="assets/images/mikroskop.png" alt="Microscope" class="microscope-img">
+                    <img loading="lazy" src="assets/images/mikroskop.webp" alt="Microscope OpenFlexure ITB" class="microscope-img">
                 </div>
             </div>
 
             <!-- Search Box -->
             <div class="search-box">
-                <input type="text" placeholder="Type to search..." class="search-input">
+                <input type="text"
+                       id="searchFiles"
+                       placeholder="Cari nama file..."
+                       class="search-input"
+                       aria-label="Cari file">
             </div>
 
             <!-- Files Table -->
@@ -62,7 +69,9 @@ include 'components/header.php';
                         <span class="settings">20% Infill</span>
                     </div>
                     <div class="table-col col-action">
-                        <button class="download-file-btn">Download</button>
+                        <a href="assets/downloads/main_body.stl"
+                           class="download-file-btn"
+                           download>Download</a>
                     </div>
                 </div>
 
@@ -81,7 +90,9 @@ include 'components/header.php';
                         <span class="settings">100% Infill</span>
                     </div>
                     <div class="table-col col-action">
-                        <button class="download-file-btn">Download</button>
+                        <a href="assets/downloads/focus_gear_large.stl"
+                           class="download-file-btn"
+                           download>Download</a>
                     </div>
                 </div>
 
@@ -100,7 +111,9 @@ include 'components/header.php';
                         <span class="settings">0.1mm Layer</span>
                     </div>
                     <div class="table-col col-action">
-                        <button class="download-file-btn">Download</button>
+                        <a href="assets/downloads/optics_mount.stl"
+                           class="download-file-btn"
+                           download>Download</a>
                     </div>
                 </div>
 
@@ -119,9 +132,12 @@ include 'components/header.php';
                         <span class="settings">Standard</span>
                     </div>
                     <div class="table-col col-action">
-                        <button class="download-file-btn">Download</button>
+                        <a href="assets/downloads/raspberry_pi_case.stl"
+                           class="download-file-btn"
+                           download>Download</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
